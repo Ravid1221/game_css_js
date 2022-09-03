@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/924071329e.js" crossorigin="anonymous"></script>
+    <script src="app.js" async defer></script>
+    <title>Clicker Game V2</title>
+</head>
+
+<body>
+    <div class="container">
+        <i class="fas fa-dollar-sign background-image"></i>
+        <header>
+            <div class="earning-level">
+                <h1>Earning Level <span id="displayEarningLevel"></span> <i class="fas fa-info-circle"
+                        id="openInfoPopup"></i></h1>
+            </div>
+            <div class="earning">
+                <p><span id="displayEarning">1</span>$ pre second</p>
+            </div>
+        </header>
+        <main>
+            <p><span id="displayCurrentMoney">0</span>$</p>
+        </main>
+        <footer>
+            <button id="openShop">Updrage Shop</button>
+            <button id="addMoney">Add <span id="displayAddMoney">1</span>$</button>
+            <button id="upgradeLevel" class="disabled">Updrage Level</button>
+        </footer>
+        <div class="info-wrapper">
+            <div class="info-popup">
+                <i class="far fa-times-circle" id="closeInfoPopup"></i>
+                <h3>Levels:</h3>
+                <p>Each level multiply your earning!</p>
+                <ul class="levels-list">
+                    <li class="level-item active">Level 1</li>
+                    <li class="level-item">Level 2 (10,000$)</li>
+                    <li class="level-item">Level 3 (100,000$)</li>
+                    <li class="level-item">Level 4 (1,000,000$)</li>
+                    <li class="level-item">Level 5 (10,000,000$)</li>
+                    <li class="level-item">Level 6 (100,000,000$)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="shop-wrapper">
+            <div class="upgrade-shop-popup">
+                <i class="far fa-times-circle" id="closeShopPopup"></i>
+                <h3>Upgrade Shop</h3>
+                <div class="updrage">
+                    <p>Increase your earning by 1$</p> <button class="upgrade-btn"><span
+                            class="upgrade-btn-span">20$</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
